@@ -6,7 +6,7 @@ This test is done with JMeter, so the only thing that you have to do is open thi
 
 Following are explained the different components:
 
-- *CSV users*: This component is used to get the necessary users to do the test. You have to set the file you are going to use.
+- *CSV users*: This component is used to get the necessary users to do the test. You have to set the file you are going to use (You can find and example on **users_set.csv** file).
 - *HTTP Request Defaults*: Component to manage the default values use for the whole test. You only have to configure the server name or IP and the port.
 -   Submission: Thread group where you set the number of users or threads you are going to use for your test.
   - _Login_: In this component the sign in is managed for every user.
@@ -20,3 +20,5 @@ Following are explained the different components:
 The **summary report** shows the different statistics for the whole test.
 
 How to start it? Firstly, clear all the reports ans listeners, then, start the test.
+
+**How to insert users in the DB?** : For that, you can find the **mongo.js** file. Run the next command `mongo INGInious < mongo.js` to insert the users.
