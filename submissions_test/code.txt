@@ -1,0 +1,19 @@
+#include<bits/stdc++.h> 
+using namespace std;  
+
+bool isPrime(int a) {     
+	for(int b = 2 ; b * b <= a ; b++){         
+		if( a % b == 0 ) return false;     
+	}     
+	return true; 
+}  
+int main() {     
+	int a;     
+	while(cin >> a) {         
+		if( isPrime(a) ){
+			cout<<"yes"<<endl;
+		}else {
+			cout << "no" <<endl;         
+		}     
+	} 
+}

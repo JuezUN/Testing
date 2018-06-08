@@ -334,21 +334,21 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="@action" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">submit</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">@action</stringProp>
               </elementProp>
               <elementProp name="${subproblem}/type" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">code_multiple_languages</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">${subproblem}/type</stringProp>
               </elementProp>
               <elementProp name="${subproblem}/language" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">${language}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
@@ -356,41 +356,41 @@
               </elementProp>
               <elementProp name="${subproblem}" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">#include&lt;bits/stdc++.h&gt;\n using namespace std;  bool isPrime(int a) {     for(int b = 2 ; b * b &lt;= a ; b++){         if( a % b == 0 ) return false;     }     return true; }  int main() {     int a;     while(cin &gt;&gt; a) {         if( isPrime(a) ){          	cout&lt;&lt;&quot;yes&quot;&lt;&lt;endl;         }else {             cout &lt;&lt; &quot;no&quot; &lt;&lt;endl;         }     } }</stringProp>
+                <stringProp name="Argument.value">${__FileToString(/home/cristian/Desktop/Judge/Testing/submissions_test/code.txt,ASCII,)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">${subproblem}</stringProp>
               </elementProp>
               <elementProp name="${subproblem}/input" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">1</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">${__FileToString(/home/cristian/Desktop/Judge/Testing/submissions_test/input.txt,ASCII,)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">${subproblem}/input</stringProp>
               </elementProp>
               <elementProp name="@debug-mode" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value"></stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">@debug-mode</stringProp>
               </elementProp>
               <elementProp name="submit_action" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">customtest</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">submit_action</stringProp>
               </elementProp>
               <elementProp name="courseid" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">${course}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">courseid</stringProp>
               </elementProp>
               <elementProp name="taskid" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.value">${task}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
