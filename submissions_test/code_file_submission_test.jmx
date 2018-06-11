@@ -29,12 +29,17 @@
           </elementProp>
           <elementProp name="file_path" elementType="Argument">
             <stringProp name="Argument.name">file_path</stringProp>
-            <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/project_examples/qb64-parser.zip</stringProp>
+            <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/project_examples/cpp_example.zip</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="language" elementType="Argument">
             <stringProp name="Argument.name">language</stringProp>
             <stringProp name="Argument.value">cpp</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="input_file" elementType="Argument">
+            <stringProp name="Argument.name">input_file</stringProp>
+            <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/input.txt</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -79,7 +84,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">15</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
@@ -370,7 +375,7 @@
               </elementProp>
               <elementProp name="${subproblem}/input" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${__FileToString(/home/cristian/Desktop/Judge/Testing/submissions_test/input.txt,ASCII,)}</stringProp>
+                <stringProp name="Argument.value">${__FileToString(${input_file},ASCII,)}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">${subproblem}/input</stringProp>
