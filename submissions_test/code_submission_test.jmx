@@ -32,14 +32,14 @@
             <stringProp name="Argument.value">cpp</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="code_file" elementType="Argument">
-            <stringProp name="Argument.name">code_file</stringProp>
-            <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/code.txt</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="input_file" elementType="Argument">
             <stringProp name="Argument.name">input_file</stringProp>
             <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/input.txt</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="code_file" elementType="Argument">
+            <stringProp name="Argument.name">code_file</stringProp>
+            <stringProp name="Argument.value">/home/cristian/Desktop/Judge/Testing/submissions_test/code.txt</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

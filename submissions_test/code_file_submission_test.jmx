@@ -17,13 +17,13 @@
             <stringProp name="Argument.value">ANTLR</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="taskid" elementType="Argument">
-            <stringProp name="Argument.name">taskid</stringProp>
+          <elementProp name="task" elementType="Argument">
+            <stringProp name="Argument.name">task</stringProp>
             <stringProp name="Argument.value">Pro1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="courseid" elementType="Argument">
-            <stringProp name="Argument.name">courseid</stringProp>
+          <elementProp name="course" elementType="Argument">
+            <stringProp name="Argument.name">course</stringProp>
             <stringProp name="Argument.value">Project</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -169,7 +169,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="register_courseid" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${courseid}</stringProp>
+                <stringProp name="Argument.value">${course}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">register_courseid</stringProp>
@@ -236,7 +236,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/course/${courseid}</stringProp>
+          <stringProp name="HTTPSampler.path">/course/${course}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -292,7 +292,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/course/${courseid}/${taskid}</stringProp>
+          <stringProp name="HTTPSampler.path">/course/${course}/${task}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -343,8 +343,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Custom input submission" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="/home/cristian/Desktop/Judge/Testing/submissions_test/project_examples/qb64-parser.zip" elementType="HTTPFileArg">
-                <stringProp name="File.path">/home/cristian/Desktop/Judge/Testing/submissions_test/project_examples/qb64-parser.zip</stringProp>
+              <elementProp name="file_path" elementType="HTTPFileArg">
+                <stringProp name="File.path">file_path</stringProp>
                 <stringProp name="File.paramname">${subproblem}</stringProp>
                 <stringProp name="File.mimetype">application/zip</stringProp>
               </elementProp>
@@ -396,14 +396,14 @@
               </elementProp>
               <elementProp name="courseid" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${courseid}</stringProp>
+                <stringProp name="Argument.value">${course}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">courseid</stringProp>
               </elementProp>
               <elementProp name="taskid" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${taskid}</stringProp>
+                <stringProp name="Argument.value">${task}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">taskid</stringProp>
