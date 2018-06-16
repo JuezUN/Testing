@@ -1,0 +1,47 @@
+accessible: true
+author: ''
+context: |
+    This is project 1
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: ANTRL
+grader_test_cases:
+-   output_file: a.out
+    weight: 1.0
+    input_file: a.in
+    diff_shown: true
+groups: false
+input_random: '0'
+limits:
+    time: '30'
+    output: '2'
+    memory: '100'
+name: Project 1
+network_grading: false
+problems:
+    ANTRL:
+        languages:
+            java7: java7
+            c11: c11
+            cpp11: cpp11
+            python2: python2
+            cpp: cpp
+            java8: java8
+            python3: python3
+            c: c
+        header: |
+            In this problem you'll need to parse a qb64 program
+        name: ANTRL
+        max_size: 500000000
+        type: code_file_multiple_languages
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 1.0

@@ -1,0 +1,51 @@
+accessible: true
+author: ''
+context: In this task, you are required to write a program to determine if a given
+    number is prime or not
+environment: multiple_languages
+evaluate: best
+generate_grader: true
+grader_compute_diffs: true
+grader_diff_context_lines: 3
+grader_diff_max_lines: 100
+grader_problem_id: Primes
+grader_test_case_in: b.in
+grader_test_case_out: b.out
+grader_test_cases:
+-   output_file: a.out
+    input_file: a.in
+    diff_shown: true
+    weight: 1.0
+-   diff_shown: true
+    input_file: b.in
+    output_file: b.out
+    weight: 1.0
+groups: false
+input_random: '0'
+limits:
+    memory: '300'
+    output: '2'
+    time: '30'
+name: Prime Numbers
+network_grading: false
+problems:
+    Primes:
+        languages:
+            python2: python2
+            cpp11: cpp11
+            java7: java7
+            java8: java8
+            cpp: cpp
+            c11: c11
+            python3: python3
+            c: c
+        type: code_multiple_languages
+        header: Type your code here
+        name: Primes
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+tags: {}
+treat_non_zero_as_runtime_error: true
+weight: 1.0

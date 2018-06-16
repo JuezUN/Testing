@@ -1,0 +1,10 @@
+#!/bin/python3
+
+from grading import graders
+
+problem_id = 'Primes'
+test_cases = [('a.in', 'a.out'), ('b.in', 'b.out')]
+options = {'treat_non_zero_as_runtime_error': True, 'diff_context_lines': 3, 'compute_diff': True, 'output_diff_for': ['a.in', 'b.in'], 'diff_max_lines': 100}
+weights = [1.0, 1.0]
+
+graders.handle_problem_action(problem_id, test_cases, options=options, weights=weights)

@@ -1,0 +1,10 @@
+#!/bin/python3
+
+from grading import graders
+
+problem_id = 'ANTRL'
+test_cases = [('a.in', 'a.out')]
+options = {'output_diff_for': ['a.in'], 'diff_max_lines': 100, 'compute_diff': True, 'treat_non_zero_as_runtime_error': True, 'diff_context_lines': 3}
+weights = [1.0]
+
+graders.handle_problem_action(problem_id, test_cases, options=options, weights=weights)
