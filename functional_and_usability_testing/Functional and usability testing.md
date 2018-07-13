@@ -50,7 +50,7 @@
 
 * **Statistics**
 
-  * ***Download CSV* option does not work, if it is not available, it shouldn't be shown to the user**.
+  * ~~***Download CSV* option does not work, if it is not available, it shouldn't be shown to the user**~~(JS code to check if option is available).
   * **When the results are shown as table, the submission code is a link, but it redirects to a broken link.**
   * **On *Submissions Verdict (ALL) and (BEST)* statistics, the shown task should display the task's name not task's ID**.
 
