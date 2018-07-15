@@ -51,7 +51,7 @@
 * **Statistics**
 
   * ~~***Download CSV* option does not work, if it is not available, it shouldn't be shown to the user**~~(JS code to check if option is available).
-  * **When the results are shown as table, the submission code is a link, but it redirects to a broken link.**
+  * ~~**When the results are shown as table, the submission code is a link, but it redirects to a broken link.**~~(In the code the direction just use the subsection submissions. The course id, task id, etc. are unnecessary.)
   * **On *Submissions Verdict (ALL) and (BEST)* statistics, the shown task should display the task's name not task's ID**.
 
 * What about input and output examples in the explanation of the task?
