@@ -1,33 +1,13 @@
-# UNCode - Testing
-
-[![Gitter](https://badges.gitter.im/uncode-unal/community.svg)][gitter_url]
-[![GitHub license](https://img.shields.io/github/license/JuezUN/Testing?style=plastic)][repository_url]
-[![Contributors](https://img.shields.io/github/contributors/JuezUN/Testing?style=plastic)][contributors_url]
-[![CLA assistant](https://cla-assistant.io/readme/badge/JuezUN/Testing)][cla_url]
-
-In this repository you can find the different tests done for UNCode.
-
-By the moment the only testing we have does for _load testing_. Load testing is intended to see and
- measure the server behavior when several users are trying to use the app at the same time. This could be sign in,
- going to a task page and make a submission. This testing is done via `JMeter`, testing several workflows 
- like frontend performance or Notebook submissions.
-
-## Getting started
-
-### Dependencies
-
-- [JMeter][jmeter_url]
-
-## Load testing
+# Load testing
 
 Here we describe how the load testing is done using JMeter. The testings we do here are to
 check performance of Frontend, Multilang and Notebook submissions.
 
-### Initial settings
+## Initial settings
 
 In order to be able to run the tests, you must do some first settings and steps:
 
-#### 1. Create tasks on UNCode
+### 1. Create tasks on UNCode
 
 In the folder `tasks/` there is an example of a course called `grader-1`. You can add this
 course in the server tasks folder (`/var/www/INGInious/tasks`) or use a test course you have already created.
@@ -41,7 +21,7 @@ Inside `tasks/` folder, there are two example tasks:
  files in several languages. There is not a load test related to this task, however, in case you
  want to create one, it is quite similar to the notebook load test.
 
-#### 2. Insert users to DB
+### 2. Insert users to DB
 
 First of all, you need to insert some dummy users to the Database. That way you can simulate
 several users logging in and submitting code.
@@ -55,7 +35,7 @@ This registers 1000 students in the provided testing course `grader-1`. You can 
 
 Now you are ready to start testing UNCode with **JMeter**.
 
-### Start testing
+## Start testing
 
 The main goal of these tests is to measure the server performance. For that, there are various ways
 to achieve that, they are Frontend, multiple languages submission and Notebook submission.
@@ -70,7 +50,7 @@ is:
 5. Select and open the task (either _TestTask1_ or _notebook_).
 6. Submit the code (only for the case of Multiple languages and Notebook tests).
 
-#### Components
+### Components
 
 The components present in one test are present across all tests. These components are explained
 bellow as the image shows:
@@ -97,27 +77,27 @@ payload, Headers, among others. Useful to know why a request fails.
 - **Summary Report**: Shows the results of running the test in a table with the response time
 average, min and max of all requests, error percentage, throughput, among others.
 
-##### Frontend
+#### Frontend
 
 Load Test intended to measure the performance of Frontend with several concurrent users, this
 helps us to know how is the performance of Nginx and Lighttpd services when no submissions are running. The workflow of this test is the same described above where the user opens the task `TestTask1`.
 
 The file related to this test is `Frontend load test.jmx`.
 
-##### Multiple languages submission
+#### Multiple languages submission
 
 This test is intended to understand and measure the behavior of the server when there are several users concurrently submitting code to the same task. This also gives an approach of how many concurrent users we are able to support.
 
 The file related to this test is `Multilang load test.jmx`.
 
-##### Notebook file submission
+#### Notebook file submission
 
 Test is intended to understand and measure the behavior of the server when there are several users concurrently submitting an .ipynb file to UNCode. This teste helps us to determine if this kind of
 tasks increases the load in the server in comparison with multilang tasks.
 
 The file related to this test is `Notebook load test.jmx`.
 
-### How to run the tests
+## How to run the tests
 
 Firstly, make sure JMeter is installed. Then follow next steps:
 
@@ -147,39 +127,3 @@ Firstly, make sure JMeter is installed. Then follow next steps:
     ![Open jtl report](images/summary_report.png)
 
     As you can see in the image, JMeter shows the results in a table for all the launched threads.
-
-## Documentation
-
-For additional documentation about UNCode, please refer to the [Wiki][uncode_wiki_url].
-
-## Roadmap
-
-See the [UNCode GitHub Project][project_url] for a list of proposed features for UNCode, known issues and how they are
- being tackled.
-
-## Contributing
-
-Go to [CONTRIBUTING][contributing_url] to see the guidelines and how to start contributing to UNCode.
-
-## License
-
-Distributed under the AGPL-3.0 License. See [LICENSE][license_url] for more information.
-
-## Contact
-
-In case of technical questions, please use the [gitter communication channel][gitter_url].
-
-In case you want to host your course on our deployment, email us on: <uncode_fibog@unal.edu.co>
-
-UNCode: <https://uncode.unal.edu.co>
-
-Project page: <https://juezun.github.io/UNCode_page/>
-
-[jmeter_url]: https://jmeter.apache.org/
-[uncode_wiki_url]: https://github.com/JuezUN/INGInious/wiki
-[project_url]: https://github.com/orgs/JuezUN/projects/3
-[contributing_url]: https://github.com/JuezUN/Testin/blob/master/CONTRIBUTING.md
-[gitter_url]:https://gitter.im/uncode-unal/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-[repository_url]: https://github.com/JuezUN/Testing
-[contributors_url]: https://github.com/JuezUN/Testing/graphs/contributors
-[cla_url]: https://cla-assistant.io/JuezUN/Testing

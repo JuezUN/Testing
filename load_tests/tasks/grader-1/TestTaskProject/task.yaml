@@ -1,7 +1,7 @@
 accessible: true
 author: ''
 context: |
-    This is project 1
+    This is Test task for uploading projects
 environment: multiple_languages
 evaluate: best
 generate_grader: true
