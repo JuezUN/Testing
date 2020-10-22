@@ -1,7 +1,7 @@
 # UNCode - Testing
 
 [![Gitter](https://badges.gitter.im/uncode-unal/community.svg)][gitter_url]
-[![GitHub license](https://img.shields.io/github/license/JuezUN/Testing?style=plastic)][repository_url]
+[![GitHub license](https://img.shields.io/github/license/JuezUN/Testing?label=GitHub%20license&style=plastic)][license_url]
 [![Contributors](https://img.shields.io/github/contributors/JuezUN/Testing?style=plastic)][contributors_url]
 [![CLA assistant](https://cla-assistant.io/readme/badge/JuezUN/Testing)][cla_url]
 
@@ -75,7 +75,7 @@ is:
 The components present in one test are present across all tests. These components are explained
 bellow as the image shows:
 
-![Test components](images/tests_components.png)
+![Test components](load_tests/images/tests_components.png)
 
 - **CSV users**: This component is used to load the necessary users to do the test. You have to set the file you are going to use (You can find and example on **users_set.csv** file).
 - **HTTP Request Defaults**: Component to manage the default values used for the whole test. You only have to configure the _server name_ or _IP_ and _port_ of server you are testing.
@@ -123,7 +123,7 @@ Firstly, make sure JMeter is installed. Then follow next steps:
 
 1. Open the Test plan you want use with JMeter
 2. In _Thread Group_ set the number of threads or concurrent users you want to test the server with.
-    ![Threads or users setting](images/thread_group.png)
+    ![Threads or users setting](load_tests/images/thread_group.png)
 
 3. **Run the test:**
     For this, you have two options, using either the graphical start button or in non
@@ -144,7 +144,7 @@ Firstly, make sure JMeter is installed. Then follow next steps:
     component. The, open the file that was just created as shown in the next image and JMeter will
     do all calculations for you.
 
-    ![Open jtl report](images/summary_report.png)
+    ![Open jtl report](load_tests/images/summary_report.png)
 
     As you can see in the image, JMeter shows the results in a table for all the launched threads.
 
@@ -183,3 +183,4 @@ Project page: <https://juezun.github.io/UNCode_page/>
 [repository_url]: https://github.com/JuezUN/Testing
 [contributors_url]: https://github.com/JuezUN/Testing/graphs/contributors
 [cla_url]: https://cla-assistant.io/JuezUN/Testing
+[license_url]: https://github.com/JuezUN/Testing/blob/master/LICENSE
