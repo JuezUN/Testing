@@ -173,7 +173,7 @@ In case you want to host your course on our deployment, email us on: <uncode_fib
 
 UNCode: <https://uncode.unal.edu.co>
 
-Project page: <https://juezun.github.io/UNCode_page/>
+Project page: <https://juezun.github.io/>
 
 [jmeter_url]: https://jmeter.apache.org/
 [uncode_wiki_url]: https://github.com/JuezUN/INGInious/wiki
